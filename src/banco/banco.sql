@@ -1,28 +1,10 @@
-- Script MySQL gerado pelo MySQL Workbench
-- Qua, 1 de julho de 16:03:09 2020
-- Modelo: New Model Versão: 1.0
-- Engenharia Avançada do MySQL Workbench
-
 SET @OLD_UNIQUE_CHECKS = @@ UNIQUE_CHECKS, UNIQUE_CHECKS = 0 ;
 SET @OLD_FOREIGN_KEY_CHECKS = @@ FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS = 0 ;
 SET @OLD_SQL_MODE = @@ SQL_MODE, SQL_MODE = ' ONLY_FULL_GROUP_BY, STRICT_TRANS_TABLES, NO_ZERO_IN_DATE, NO_ZERO_DATE, ERROR_FOR_DIVISION_BY_ZERO, NO_ENGINE_SUBSTITION' ;
 
-- ------------------------------------------------ -----
-- Esquema bancoAppAulaDS
-- ------------------------------------------------ -----
-- ------------------------------------------------ -----
-- dbaulads de esquema
-- ------------------------------------------------ -----
-
-- ------------------------------------------------ -----
-- dbaulads de esquema
-- ------------------------------------------------ -----
 CRIAR SCHEMA SE  NÃO  EXISTE  ` dbaulads ` PADRÃO CHARACTER  SET utf8;
 USO  ` dbaulads ` ;
 
-- ------------------------------------------------ -----
-- Tabela `dbaulads``categorias`
-- ------------------------------------------------ -----
 CRIAR  TABELA  SE  NÃO  EXISTE  ` dbaulads ` . ` CATEGORIAS ` (
   ` Idcategoria `  INT ( 11 ) NÃO  NULL AUTO_INCREMENT,
   ` Nomo `  VARCHAR ( 60 ) não  nulo ,
@@ -35,9 +17,6 @@ AUTO_INCREMENT =  69
 PADRÃO PERSONALIZADO  SET  = utf8;
 
 
-- ------------------------------------------------ -----
-- Quadro `dbaulads``clientes`
-- ------------------------------------------------ -----
 CRIAR  TABELA  SE  NÃO  EXISTE  ` dbaulads ` . ` Clientes ` (
   ` Idcliente `  INT ( 11 ) NÃO  NULL AUTO_INCREMENT,
   ` Nomo `  VARCHAR ( 60 ) não  nulo ,
@@ -51,9 +30,6 @@ MOTOR = InnoDB
 PADRÃO PERSONALIZADO  SET  = utf8;
 
 
-- ------------------------------------------------ -----
-- Tabela `dbaulads`.`formas_pagamento`
-- ------------------------------------------------ -----
 CRIAR  TABELA  SE  NÃO  EXISTE  ` dbaulads ` . ` Formas_pagamento ` (
   ` Idformas_pagamento `  INT ( 11 ) NÃO  NULL AUTO_INCREMENT,
   ` Nomo `  VARCHAR ( 45 ) não  nulo ,
@@ -67,9 +43,6 @@ MOTOR = InnoDB
 PADRÃO PERSONALIZADO  SET  = utf8;
 
 
-- ------------------------------------------------ -----
-- Quadro `dbaulads``produtos`
-- ------------------------------------------------ -----
 CRIAR  TABELA  SE  NÃO  EXISTE  ` dbaulads ` . ` Produtos ` (
   ` Idproduto `  INT ( 11 ) NÃO  NULL AUTO_INCREMENT,
   ` Nomo `  VARCHAR ( 45 ) não  nulo ,
@@ -93,9 +66,6 @@ MOTOR = InnoDB
 PADRÃO PERSONALIZADO  SET  = utf8;
 
 
-- ------------------------------------------------ -----
-- Quadro `dbaulads``vendas`
-- ------------------------------------------------ -----
 CRIAR  TABELA  SE  NÃO  EXISTE  ` dbaulads ` . ` Vendas ` (
   ` Idvenda `  INT ( 11 ) NÃO  NULL AUTO_INCREMENT,
   ` Data_venda `  DATETIME  NOT  NULL ,
@@ -120,9 +90,6 @@ MOTOR = InnoDB
 PADRÃO PERSONALIZADO  SET  = utf8;
 
 
-- ------------------------------------------------ -----
-- Tabela `dbaulads`.`itens_venda`
-- ------------------------------------------------ -----
 CRIAR  TABELA  SE  NÃO  EXISTE  ` dbaulads ` . ` Itens_venda ` (
   ` Iditens_venda `  INT ( 11 ) NÃO  NULL AUTO_INCREMENT,
   ` Idvenda `  INT ( 11 ) não  nulo ,
